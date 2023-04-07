@@ -1,8 +1,8 @@
-# aipl Format
+# oprm Format
 
 ## What is it?
 
-A file format for AI prompts, designed to efficiently store and organize prompts and their corresponding template strings. This format is based on a widely used and easy-to-parse format like JSON. Let's call this format "AI Prompt Language" (AIPL).
+A file format for AI prompts, designed to efficiently store and organize prompts and their corresponding template strings. This format is based on a widely used and easy-to-parse format like JSON. Let's call this format "Open Prompt" (OPRM).
 
 ## File Format
 
