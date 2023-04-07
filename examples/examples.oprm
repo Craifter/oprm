@@ -1,0 +1,74 @@
+{
+    "version": "0.0.1",
+    "generator": "ChatCrafter",
+    "prompts": [{
+            "id": "name-generator",
+            "name": "name generator",
+            "description": "Gives names for a gender",
+            "prompt": "Give me names for a {{gender}}",
+            "variables": [{
+                "name": "gender",
+                "type": "string",
+                "description": "Girl or Boy"
+            }],
+            "tags": ["person", "names"],
+            "metadata": {
+                "author": "Craifter",
+                "creation_date": "2023-04-05",
+                "source": "https://github.com/Craifter/oprm"
+            },
+            "model": {
+                "id": "gpt-3.5-turbo",
+                "name": "GPT-3.5",
+                "maxLength": 12000,
+                "tokenLimit": 4000
+            }
+        },
+        {
+            "id": "b4d6ea0f-bf90-47f2-a7b6-d63e13f228a7",
+            "name": "Create React Component",
+            "description": "Creates a react component with tailwind and typescript",
+            "prompt": "Create a React Component with TypeScript and Tailwind CSS that does the following:\n{{functionality}}\n\nUse this code format:\ninterface Props {\n<props>\n}\n\nexport const Component: FC<Props> = ({<props>}) = {\n  return (\n    <code>\n  );\n}",
+            "variables": [{
+                "name": "functionality",
+                "type": "string",
+                "description": "Functionality"
+            }],
+            "tags": ["dev", "react", "tailwind", "typescript"],
+            "metadata": {
+                "author": "Craifter",
+                "creation_date": "2023-04-05",
+                "source": "https://github.com/Craifter/oprm"
+            },
+            "model": {
+                "id": "gpt-3.5-turbo",
+                "name": "GPT-3.5",
+                "maxLength": 12000,
+                "tokenLimit": 4000
+            }
+        },
+        {
+            "id": "b5e3438b-8223-4ee7-89a6-01afc6512ace",
+            "name": "Make Component responsive",
+            "description": "Uses tailwind css to make the component responsive",
+            "prompt": "Improve the styles on my component with Tailwind CSS. Make it responsive for mobile and desktop. \n{{component}}",
+            "variables": [{
+                "name": "component",
+                "type": "string",
+                "description": "React Component"
+            }],
+            "tags": ["dev", "react", "tailwind"],
+            "metadata": {
+                "author": "Craifter",
+                "creation_date": "2023-04-05",
+                "source": "https://github.com/Craifter/oprm"
+            },
+            "model": {
+                "id": "gpt-3.5-turbo",
+                "name": "GPT-3.5",
+                "maxLength": 12000,
+                "tokenLimit": 4000
+            }
+        }
+    ]
+}

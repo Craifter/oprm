@@ -27,7 +27,7 @@ A file format for AI prompts, designed to efficiently store and organize prompts
             "metadata": {
                 "author": "Jane Doe",
                 "creation_date": "2023-04-05",
-                "source": "https://www.example.com/ai-promt"
+                "source": "https://github.com/Craifter/oprm"
             },
             "model": {
                 "id": "gpt-3.5-turbo",
