@@ -22,12 +22,18 @@ A file format for AI prompts, designed to efficiently store and organize prompts
                     "type": "string",
                     "description": "Girl or Boy"
                 }
-            ]
+            ],
             "tags": ["person", "names"],
             "metadata": {
                 "author": "Jane Doe",
                 "creation_date": "2023-04-05",
                 "source": "https://www.example.com/ai-promt"
+            },
+            "model": {
+                "id": "gpt-3.5-turbo",
+                "name": "GPT-3.5",
+                "maxLength": 12000,
+                "tokenLimit": 4000
             }
         }
     ]
@@ -45,3 +51,4 @@ A file format for AI prompts, designed to efficiently store and organize prompts
 | variables   | object | List of possible variables                            |
 | tags        | array  | List of tags fitting to the promt                     |
 | metadata    | object | Additional information                                |
+| model       | object | Information about the model for which the promt is    |
