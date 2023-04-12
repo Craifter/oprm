@@ -1,74 +1,120 @@
 {
-    "version": "0.0.1",
-    "generator": "ChatCrafter",
-    "prompts": [{
-            "id": "name-generator",
-            "name": "name generator",
-            "description": "Gives names for a gender",
-            "prompt": "Give me names for a {{gender}}",
-            "variables": [{
-                "name": "gender",
-                "type": "string",
-                "description": "Girl or Boy"
-            }],
-            "tags": ["person", "names"],
-            "metadata": {
-                "author": "Craifter",
-                "creation_date": "2023-04-05",
-                "source": "https://github.com/Craifter/oprm"
-            },
-            "model": {
-                "id": "gpt-3.5-turbo",
-                "name": "GPT-3.5",
-                "maxLength": 12000,
-                "tokenLimit": 4000
-            }
-        },
+  "version": "0.0.1",
+  "generator": "ChatCrafter",
+  "prompts": [
+    {
+      "id": "name-generator",
+      "name": "name generator",
+      "description": "Gives names for a gender",
+      "prompt": "Give me names for a {{gender}}",
+      "variables": [
         {
-            "id": "b4d6ea0f-bf90-47f2-a7b6-d63e13f228a7",
-            "name": "Create React Component",
-            "description": "Creates a react component with tailwind and typescript",
-            "prompt": "Create a React Component with TypeScript and Tailwind CSS that does the following:\n{{functionality}}\n\nUse this code format:\ninterface Props {\n<props>\n}\n\nexport const Component: FC<Props> = ({<props>}) = {\n  return (\n    <code>\n  );\n}",
-            "variables": [{
-                "name": "functionality",
-                "type": "string",
-                "description": "Functionality"
-            }],
-            "tags": ["dev", "react", "tailwind", "typescript"],
-            "metadata": {
-                "author": "Craifter",
-                "creation_date": "2023-04-05",
-                "source": "https://github.com/Craifter/oprm"
-            },
-            "model": {
-                "id": "gpt-3.5-turbo",
-                "name": "GPT-3.5",
-                "maxLength": 12000,
-                "tokenLimit": 4000
-            }
-        },
-        {
-            "id": "b5e3438b-8223-4ee7-89a6-01afc6512ace",
-            "name": "Make Component responsive",
-            "description": "Uses tailwind css to make the component responsive",
-            "prompt": "Improve the styles on my component with Tailwind CSS. Make it responsive for mobile and desktop. \n{{component}}",
-            "variables": [{
-                "name": "component",
-                "type": "string",
-                "description": "React Component"
-            }],
-            "tags": ["dev", "react", "tailwind"],
-            "metadata": {
-                "author": "Craifter",
-                "creation_date": "2023-04-05",
-                "source": "https://github.com/Craifter/oprm"
-            },
-            "model": {
-                "id": "gpt-3.5-turbo",
-                "name": "GPT-3.5",
-                "maxLength": 12000,
-                "tokenLimit": 4000
-            }
+          "name": "gender",
+          "type": "string",
+          "description": "Girl or Boy"
         }
-    ]
+      ],
+      "tags": ["person", "names"],
+      "metadata": {
+        "author": "Craifter",
+        "creation_date": "2023-04-05",
+        "source": "https://github.com/Craifter/oprm"
+      },
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      }
+    },
+    {
+      "id": "b4d6ea0f-bf90-47f2-a7b6-d63e13f228a7",
+      "name": "Create React Component",
+      "description": "Creates a react component with tailwind and typescript",
+      "prompt": "Create a React Component with TypeScript and Tailwind CSS that does the following:\n{{functionality}}\n\nUse this code format:\ninterface Props {\n<props>\n}\n\nexport const Component: FC<Props> = ({<props>}) = {\n  return (\n    <code>\n  );\n}",
+      "variables": [
+        {
+          "name": "functionality",
+          "type": "string",
+          "description": "Functionality"
+        }
+      ],
+      "tags": ["dev", "react", "tailwind", "typescript"],
+      "metadata": {
+        "author": "Craifter",
+        "creation_date": "2023-04-05",
+        "source": "https://github.com/Craifter/oprm"
+      },
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      }
+    },
+    {
+      "id": "b5e3438b-8223-4ee7-89a6-01afc6512ace",
+      "name": "Make Component responsive",
+      "description": "Uses tailwind css to make the component responsive",
+      "prompt": "Improve the styles on my component with Tailwind CSS. Make it responsive for mobile and desktop. \n{{component}}",
+      "variables": [
+        {
+          "name": "component",
+          "type": "string",
+          "description": "React Component"
+        }
+      ],
+      "tags": ["dev", "react", "tailwind"],
+      "metadata": {
+        "author": "Craifter",
+        "creation_date": "2023-04-05",
+        "source": "https://github.com/Craifter/oprm"
+      },
+      "model": {
+        "id": "gpt-3.5-turbo",
+        "name": "GPT-3.5",
+        "maxLength": 12000,
+        "tokenLimit": 4000
+      }
+    }
+  ],
+  "dirs": [
+    {
+      "type": "dir",
+      "id": "c4360328-5fec-49cb-b6c1-fbf099e2a33f",
+      "name": "Directory 1",
+      "elements": [
+        {
+          "type": "promt",
+          "id": "b5e3438b-8223-4ee7-89a6-01afc6512ace"
+        },
+        {
+          "type": "prompt",
+          "id": "b4d6ea0f-bf90-47f2-a7b6-d63e13f228a7"
+        }
+      ]
+    },
+    {
+      "type": "dir",
+      "id": "076e3bf2-b8b3-4783-9645-d1dc685f3dc2",
+      "name": "Directory 2",
+      "elements": [
+        {
+          "type": "prompt",
+          "id": "name-generator"
+        },
+        {
+          "type": "dir",
+          "id": "a7b85228-0269-4281-a4f7-abca932a951c",
+          "name": "Directory 3",
+          "elements": [
+            {
+              "type": "prompt",
+              "id": "b5e3438b-8223-4ee7-89a6-01afc6512ace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
